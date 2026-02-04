@@ -4,9 +4,9 @@ function Form() {
   return (
     <div className="bg-purple-50 min-h-screen py-10 flex justify-center">
       <div className="w-full max-w-2xl mx-4">
-        {/* Header */}
+        {/* Header*/}
         <div className="bg-white rounded-t-lg border-t-8 border-purple-700 p-6 mb-3 shadow-sm">
-          <h1 className="text-3xl font-normal text-slate-900">Survei Perokok</h1>
+          <h1 className="text-3xl font-normal text-slate-900">Survei Kesehatan</h1>
         </div>
 
         <form className="space-y-3">
@@ -44,7 +44,7 @@ function Form() {
             </div>
           </div>
 
-          {/* Status Perokok  */}
+          {/* Status Perokok*/}
           <div className="bg-white p-6 rounded-lg shadow-sm border border-slate-200">
             <label className="block text-base mb-4">Apakah Anda Perokok?</label>
             <div className="space-y-3">
@@ -61,7 +61,7 @@ function Form() {
           <div className="bg-white p-6 rounded-lg shadow-sm border border-slate-200">
             <label className="block text-base mb-2">Jika Anda Perokok, Rokok apa yang pernah Anda coba?</label>
             <div className="space-y-3">
-              {['Marboro', 'Kretek', 'Sampurna', 'Grendel'].map((merk) => (
+              {['Sampurna', 'Kretek', 'Filter', 'Grandel'].map((merk) => (
                 <label key={merk} className="flex items-center cursor-pointer">
                   <input type="checkbox" className="w-5 h-5 rounded accent-purple-700" />
                   <span className="ml-3 text-sm text-slate-700">{merk}</span>
@@ -70,13 +70,13 @@ function Form() {
             </div>
           </div>
 
-          {/* CTA */}
+          {/* CTA*/}
           <div className="flex justify-between items-center py-4">
             <button type="submit" className="bg-purple-700 text-white px-6 py-2 rounded shadow hover:bg-purple-800 transition font-medium">
               Kirim
             </button>
             <button type="reset" className="text-purple-700 font-medium text-sm hover:bg-purple-50 px-3 py-2 rounded">
-              reset
+              Reset
             </button>
           </div>
         </form>
