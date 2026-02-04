@@ -1,14 +1,17 @@
-
+import React from "react";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Form from "./pages/Form";
+import Submission from "./pages/Submission";
 
 function App() {
   return (
-    <>
-      <div className="h-screen bg-slate-100">
-        
-      </div>
-      
-    </>
-  )
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Form />} />
+        <Route path="/submission" element={<Submission />} />
+      </Routes>
+    </BrowserRouter>
+  );
 }
 
-export default App
+export default App;
